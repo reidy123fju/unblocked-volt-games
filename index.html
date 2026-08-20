@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Unblocked Volt Games — instant games, zero waiting." />
+    <title>Unblocked Volt Games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Unblocked Volt Games home">
+        <span class="brand-mark"><i></i><i></i><i></i></span>
+        <span>UNBLOCKED<br /><strong>VOLT</strong></span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a class="active" href="#discover">Discover</a>
+        <a href="#trending">Trending</a>
+        <a href="#new">New drops</a>
+        <a href="#collections">Collections</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" id="themeToggle" aria-label="Toggle visual mode">◐</button>
+        <button class="menu-button" id="menuButton" aria-expanded="false" aria-controls="mobileMenu">Menu <span>+</span></button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" id="discover">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> The free-play arcade</p>
+          <h1>POWER UP<br />YOUR <em>BREAK.</em></h1>
+          <p class="hero-text">A quick-hit collection of games for when you have a few minutes to spare. No installs. No friction. Just play.</p>
+          <div class="hero-buttons">
+            <a class="button primary" href="#trending">Explore games <b>↗</b></a>
+            <button class="button ghost" id="surpriseButton">Surprise me <b>⚡</b></button>
+          </div>
+          <div class="hero-stats">
+            <div><strong>180<span>+</span></strong><small>Games ready</small></div>
+            <div><strong>0<span>s</span></strong><small>Download time</small></div>
+            <div><strong>24<span>/7</span></strong><small>Always online</small></div>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Abstract neon game controller illustration">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="power-word">VOLT</div>
+          <div class="controller">
+            <div class="d-pad"><i></i><i></i></div>
+            <div class="controller-screen">PLAY<br /><span>NOW</span></div>
+            <div class="face-buttons"><i></i><i></i><i></i><i></i></div>
+          </div>
+          <span class="spark s1">✦</span><span class="spark s2">✦</span><span class="spark s3">+</span>
+        </div>
+      </section>
+
+      <section class="utility-bar" aria-label="Game browser tools">
+        <label class="search"><span>⌕</span><input id="gameSearch" type="search" placeholder="Search the arcade..." autocomplete="off" /></label>
+        <div class="filters" role="group" aria-label="Game categories">
+          <button class="filter active" data-filter="all">All games</button>
+          <button class="filter" data-filter="action">Action</button>
+          <button class="filter" data-filter="puzzle">Puzzle</button>
+          <button class="filter" data-filter="racing">Racing</button>
+          <button class="filter" data-filter="chill">Chill</button>
+        </div>
+      </section>
+
+      <section class="games-section" id="trending">
+        <div class="section-heading"><div><p class="eyebrow"><span></span> Curated for you</p><h2>Trending this week</h2></div><a href="#new">View all <b>→</b></a></div>
+        <div class="game-grid" id="gameGrid">
+          <article class="game-card featured" data-category="racing" data-title="Neon Drift">
+            <div class="game-cover cover-drift"><span class="cover-label">RANKED RUN</span><div class="car-shape"></div><b>NEON<br />DRIFT</b></div>
+            <div class="game-meta"><div><h3>Neon Drift</h3><p>Racing · 2 min</p></div><button class="play-button" aria-label="Play Neon Drift">▶</button></div>
+          </article>
+          <article class="game-card" data-category="action" data-title="Skyline Slash">
+            <div class="game-cover cover-slash"><span class="slash-line"></span><b>SKYLINE<br />SLASH</b><span class="cover-number">01</span></div>
+            <div class="game-meta"><div><h3>Skyline Slash</h3><p>Action · 5 min</p></div><button class="play-button" aria-label="Play Skyline Slash">▶</button></div>
+          </article>
+          <article class="game-card" data-category="puzzle" data-title="Loop Logic">
+            <div class="game-cover cover-loop"><div class="loop-shape">∞</div><b>LOOP<br />LOGIC</b></div>
+            <div class="game-meta"><div><h3>Loop Logic</h3><p>Puzzle · 3 min</p></div><button class="play-button" aria-label="Play Loop Logic">▶</button></div>
+          </article>
+          <article class="game-card" data-category="chill" data-title="Tiny Garden">
+            <div class="game-cover cover-garden"><span>✿</span><span>✦</span><b>TINY<br />GARDEN</b></div>
+            <div class="game-meta"><div><h3>Tiny Garden</h3><p>Chill · 8 min</p></div><button class="play-button" aria-label="Play Tiny Garden">▶</button></div>
+          </article>
+          <article class="game-card" data-category="action" data-title="Byte Brawl">
+            <div class="game-cover cover-byte"><span class="pixel-grid">▦</span><b>BYTE<br />BRAWL</b></div>
+            <div class="game-meta"><div><h3>Byte Brawl</h3><p>Action · 4 min</p></div><button class="play-button" aria-label="Play Byte Brawl">▶</button></div>
+          </article>
+          <article class="game-card" data-category="racing" data-title="Rush Hour">
+            <div class="game-cover cover-rush"><span>////</span><b>RUSH<br />HOUR</b></div>
+            <div class="game-meta"><div><h3>Rush Hour</h3><p>Racing · 3 min</p></div><button class="play-button" aria-label="Play Rush Hour">▶</button></div>
+          </article>
+          <article class="game-card" data-category="action" data-title="Retro Bowl" data-url="https://game316009.konggames.com/gamez/0031/6009/live/index.html">
+            <div class="game-cover cover-retro"><span class="football">●</span><b>RETRO<br />BOWL</b><small>GAME DAY</small></div>
+            <div class="game-meta"><div><h3>Retro Bowl</h3><p>Sports · Full game</p></div><button class="play-button" aria-label="Play Retro Bowl">▶</button></div>
+          </article>
+          <article class="game-card" data-category="puzzle" data-title="2048" data-url="games/2048/index.html">
+            <div class="game-cover cover-2048"><span>2</span><span>0</span><span>4</span><span>8</span><b>2048</b></div>
+            <div class="game-meta"><div><h3>2048</h3><p>Puzzle · Endless</p></div><button class="play-button" aria-label="Play 2048">▶</button></div>
+          </article>
+          <article class="game-card" data-category="puzzle" data-title="Tetris" data-url="games/tetris/index.html">
+            <div class="game-cover cover-tetris"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><b>BLOCK<br />DROP</b></div>
+            <div class="game-meta"><div><h3>Tetris</h3><p>Puzzle · Endless</p></div><button class="play-button" aria-label="Play Tetris">▶</button></div>
+          </article>
+          <article class="game-card" data-category="action" data-title="Breakout" data-url="games/breakout/index.html">
+            <div class="game-cover cover-breakout"><span class="ball">●</span><span class="bricks">▦</span><b>BREAK<br />OUT</b></div>
+            <div class="game-meta"><div><h3>Breakout</h3><p>Arcade · 5 min</p></div><button class="play-button" aria-label="Play Breakout">▶</button></div>
+          </article>
+        </div>
+        <p class="empty-state" id="emptyState" hidden>Nothing sparked a match. Try another search.</p>
+      </section>
+
+      <section class="callout" id="collections">
+        <div><p class="eyebrow"><span></span> Daily voltage</p><h2>What kind of break<br />do you need?</h2></div>
+        <div class="mood-links"><button data-filter-jump="action">Want intensity <b>↗</b></button><button data-filter-jump="puzzle">Need a brain tickle <b>↗</b></button><button data-filter-jump="chill">Just vibing <b>↗</b></button></div>
+      </section>
+    </main>
+
+    <footer><span>© 2026 UNBLOCKED VOLT GAMES</span><span>MADE FOR THE IN-BETWEEN</span><a href="#top">Back to top ↑</a></footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
